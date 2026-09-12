@@ -28,35 +28,35 @@ export const TechCard: React.FC<TechCardProps> = ({ tech, isSelected, onToggleSe
             {tech.icon ? (
               <img src={tech.icon} alt={tech.name} className="w-6 h-6 object-contain" />
             ) : (
-              <span className="text-lg font-bold text-slate-700">{tech.name.charAt(0)}</span>
+              <span className="text-lg font-bold text-slate-700 text-[100%]">{tech.name.charAt(0)}</span>
             )}
           </div>
           {tech.badge && (
-            <span className="text-[11px] font-medium px-3 py-1 bg-sky-50 text-sky-600 rounded-full">
+            <span className="text-[11px] font-medium px-3 py-1 bg-sky-50 text-sky-600 rounded-full text-[100%]">
               {tech.badge}
             </span>
           )}
         </div>
 
-        <h3 className="text-xl font-bold text-slate-900 mb-2 tracking-tight">{tech.name}</h3>
-        <p className="text-slate-500 mb-6 text-xs leading-relaxed line-clamp-2">
+        <h3 className="text-xl font-bold text-slate-900 mb-2 tracking-tight text-[100%]">{tech.name}</h3>
+        <p className="text-slate-500 mb-6 text-xs leading-relaxed line-clamp-2 text-[100%]">
           {tech.description}
         </p>
       </div>
 
       <div>
-        <div className="flex justify-between items-center mb-4 text-xs text-slate-500 font-medium pt-3 border-t border-slate-50">
-          <span className="text-slate-600">{tech.category}</span>
-          <span className="text-slate-600">{tech.level}</span>
-          <div className="flex items-center gap-1 text-slate-900 font-bold">
-            <span className="text-amber-400 text-sm">★</span> 
-            <span>{tech.rating.toFixed(1)}</span>
+        <div className="flex justify-between items-center mb-4 text-xs text-slate-500 font-medium pt-3 border-t border-slate-50 text-[100%]">
+          <span className="text-slate-600 text-[100%]">{tech.category}</span>
+          <span className="text-slate-600 text-[100%]">{tech.level}</span>
+          <div className="flex items-center gap-1 text-slate-900 font-bold text-[100%]">
+            <span className="text-amber-400 text-sm text-[100%]">★</span> 
+            <span className="text-[100%]">{tech.rating.toFixed(1)}</span>
           </div>
         </div>
 
         <button
           onClick={() => onToggleSelect(tech)}
-          className={`w-full font-medium py-3 px-4 rounded-xl text-xs transition duration-200 shadow-sm flex items-center justify-center gap-2
+          className={`w-full font-medium py-3 px-4 rounded-xl text-xs transition duration-200 shadow-sm flex items-center justify-center gap-2 text-[100%]
             ${isSelected 
               ? 'bg-pink-50 text-pink-600 font-semibold border border-pink-100' 
               : 'bg-[#0f172a] hover:bg-slate-800 text-white font-semibold'
