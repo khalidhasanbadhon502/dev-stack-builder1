@@ -60,7 +60,7 @@ A modern, interactive web application designed for developers to explore technol
 {selectedStack.length === 0 ? (
   <p>Your stack is empty.</p>
 ) : (
-  // Render selected items
+  
 )}
 
 ```
