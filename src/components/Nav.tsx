@@ -31,21 +31,21 @@ export const Nav = () => {
             />
           </div>
 
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
-            <a href="#home" className="hover:text-slate-900">Home</a>
-            <a href="#technologies" className="hover:text-slate-900">Technologies</a>
-            <a href="#projects" className="hover:text-slate-900">Projects</a>
-            <a href="#about" className="hover:text-slate-900">About</a>
-            <a href="#contact" className="hover:text-slate-900">Contact</a>
+          <div className="hidden md:flex items-center gap-8 text-base font-normal text-slate-700">
+            <a href="#home" className="hover:text-pink-600 transition">Home</a>
+            <a href="#technologies" className="hover:text-pink-600 transition">Technologies</a>
+            <a href="#projects" className="hover:text-pink-600 transition">Projects</a>
+            <a href="#about" className="hover:text-pink-600 transition">About</a>
+            <a href="#contact" className="hover:text-pink-600 transition">Contact</a>
           </div>
 
-          <div className="flex items-center gap-3">
-            <a href="#signin" className="text-sm font-medium text-slate-600 hover:text-slate-900">
+          <div className="flex items-center gap-4">
+            <a href="#signin" className="text-base font-normal text-slate-700 hover:text-pink-600 transition">
               Sign In
             </a>
             <a 
               href="#signup" 
-              className="bg-gradient-to-r from-[#ec4899] to-[#d946ef] text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-full shadow-sm hover:opacity-90 transition"
+              className="bg-gradient-to-r from-[#ec4899] to-[#d946ef] text-white text-base font-medium px-5 py-2 rounded-full shadow-sm hover:opacity-90 transition"
             >
               Sign Up
             </a>
